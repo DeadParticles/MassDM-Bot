@@ -25,7 +25,7 @@ console.log('Unhandled Rejection at:', reason.stack || reason)
 return;
 });// remove this if u dont want to debug errs
 
-client.on("__Hey you should check out this gaming server!/https://discord.gg/juHsvv3", msg => {
+client.on("__Hey you should check out this gaming server!__/https://discord.gg/juHsvv3", msg => {
 if (msg.author.bot) return; //ignore bots
 
 var interval = 60000; //time in millisecond = 1 minute
@@ -33,7 +33,7 @@ var interval = 60000; //time in millisecond = 1 minute
 if(msg.content === "!" + "dmall"){
 let guild = client.guilds.get("538077788503015444"); //the self-bot will get member ids from the guild id
 
-var memberss = [538078558115856385]; //this will contain the members that would need to be DM'ed 
+var memberss = []; //this will contain the members that would need to be DM'ed 
 
 guild.members.forEach(function(member, index){
 if(ignoreDM.includes(index)) return; //ignore putting these ids in the memberss array
