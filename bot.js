@@ -53,4 +53,3 @@ memberss.forEach(function(memberz, index)
 
 client.login("NTM4MDU3NTIzMzMzMzAwMjI0.Dyuj9w.KWcRes_CtPM79OJJEgntngm8aao");
 
-client.login(process.env.BOT_TOKEN)
