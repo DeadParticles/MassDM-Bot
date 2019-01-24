@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client({fetchAllMembers: true});
 
-var ignoreDM = ['id here'] //author ids to ignore when trying to DM
+var ignoreDM = ['537379615220432897'] //author ids to ignore when trying to DM
 
 client.on("ready", () => {
 console.log('Bot Online and Ready! On ' + client.guilds.size + ' Servers!');
@@ -25,13 +25,13 @@ console.log('Unhandled Rejection at:', reason.stack || reason)
 return;
 });// remove this if u dont want to debug errs
 
-client.on("message", msg => {
+client.on("__Hey you should check out this gaming server!/https://discord.gg/juHsvv3", msg => {
 if (msg.author.bot) return; //ignore bots
 
 var interval = 60000; //time in millisecond = 1 minute
 
 if(msg.content === "!" + "dmall"){
-let guild = client.guilds.get("GUILD ID"); //the self-bot will get member ids from the guild id
+let guild = client.guilds.get("538077788503015444"); //the self-bot will get member ids from the guild id
 
 var memberss = []; //this will contain the members that would need to be DM'ed 
 
@@ -51,5 +51,5 @@ memberss.forEach(function(memberz, index)
 }
 })
 
-client.login("TOKEN");
+client.login("NTM4MDU3NTIzMzMzMzAwMjI0.Dyuj9w.KWcRes_CtPM79OJJEgntngm8aao");
 
