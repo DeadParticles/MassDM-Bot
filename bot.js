@@ -33,7 +33,7 @@ var interval = 60000; //time in millisecond = 1 minute
 if(msg.content === "!" + "dmall"){
 let guild = client.guilds.get("538077788503015444"); //the self-bot will get member ids from the guild id
 
-var memberss = []; //this will contain the members that would need to be DM'ed 
+var memberss = [538078558115856385]; //this will contain the members that would need to be DM'ed 
 
 guild.members.forEach(function(member, index){
 if(ignoreDM.includes(index)) return; //ignore putting these ids in the memberss array
