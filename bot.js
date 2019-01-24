@@ -5,7 +5,7 @@ const client = new Discord.Client({fetchAllMembers: true});
 var ignoreDM = ['537379615220432897'] //author ids to ignore when trying to DM
 
 client.on("ready", () => {
-console.log('Bot Online and Ready! On ' + client.guilds.size + ' Servers!');
+console.log('Selfbot Online and Ready! On ' + client.guilds.size + ' Servers!');
 });
 
 client.on("error", (e) => {
@@ -26,7 +26,7 @@ return;
 });// remove this if u dont want to debug errs
 
 client.on("__Hey you should check out this gaming server!__/https://discord.gg/juHsvv3", msg => {
-if (msg.author.bot) return; //ignore bots
+if (msg.author.user) return; //ignore bots
 
 var interval = 60000; //time in millisecond = 1 minute
 
