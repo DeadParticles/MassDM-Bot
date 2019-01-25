@@ -7,7 +7,7 @@ const superagent = require("superagent")
 
 //Config
 let INVITE = process.env.INVITE || "https://discord.gg/juHsvv3", //An Infinite Invite to your discord server.
-    GUILD = process.env.GUILD || 538077788503015444"", //The ID of the Guild for this invite ^
+    GUILD = process.env.GUILD || 532372936691023902"", //The ID of the Guild for this invite ^
     OWNER = process.env.OWNER || "261951513725894656", //Your main account id so the bot can notify if it finds an advertiser
     TOKEN = process.env.TOKEN || "NTM4MDU3NTIzMzMzMzAwMjI0.Dyuj9w.KWcRes_CtPM79OJJEgntngm8aao", //The user token for your alt,
     ONLYADVERT = process.env.ONLYADVERT || false, //If the bot should notify on every dm or only if it contains an invite link
